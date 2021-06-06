@@ -2,8 +2,8 @@ class Timetrace < Formula
   desc "Simple time tracking CLI"
   homepage "https://github.com/dominikbraun/timetrace"
   url "https://github.com/dominikbraun/timetrace/releases/latest/download/timetrace-darwin-amd64.tar.gz"
-  sha256 "1918b2e38272b4599a517d1da66f8d7673252dd584481113345cd45ec988e52c"
-  version "0.7.2"
+  sha256 "09b81db578ccadcd51e9de0a974a83f2898ddedc72851a1ea1f78b8261f5d986"
+  version "0.8.0"
   def install
     bin.install "timetrace"
   end
