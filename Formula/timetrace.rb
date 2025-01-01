@@ -16,4 +16,12 @@ class Timetrace < Formula
   def install
     bin.install "timetrace"
   end
+
+  test do
+    assert_predicate bin/"timetrace", :exist?, "binary exists"
+    assert_predicate bin/"timetrace", :executable?, "binary is executable"
+
+    output = shell_output("#{bin}/timetrace --help")
+    assert_match "timetrace", output, "help command contains string 'timetrace'"
+  end
 end
